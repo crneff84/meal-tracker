@@ -30,6 +30,7 @@ export class AppComponent {
     new Meal("Cheeseburger", "With Extra Cheese", 750),
     new Meal("Smoothie", "Only Fruit", 250)
   ];
+  selectedMeal: Meal = null;
 
 
 }
