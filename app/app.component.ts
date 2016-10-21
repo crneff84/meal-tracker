@@ -4,13 +4,13 @@ import { Meal } from './meal.model';
 @Component({
   selector: 'my-app',
   template: `
+  <div class = "jumbotron">
+    <h1>Meal Tracking System</h1>
+  </div>
   <div class = "container">
-    <div class = "jumbotron">
-      <h1>Meal Tracking System</h1>
-    </div>
     <div class = "row">
-      <div class="col-md-5">
-        <h2>Meals</h2>
+      <div class="col-md-5 entryForm">
+        <span class="headers"><h2>Meals</h2></span>
         <meal-list
           [childMealList]="masterMealList"
           (clickSender)="showDetails($event)"

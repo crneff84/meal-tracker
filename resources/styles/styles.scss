@@ -1,0 +1,33 @@
+$lightorange: #ffeace;
+$darkorange: #ff922d;
+
+body {
+  background-color: $lightorange;
+  font-family: 'Source Code Pro', monospace;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: $darkorange;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.container {
+  margin-bottom: 25px;
+}
+
+#filterList {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.mealEntry, .entryForm {
+  border: solid 2px;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.headers {
+  text-align: center;
+}

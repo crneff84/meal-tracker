@@ -4,23 +4,26 @@ import { Meal } from './meal.model';
 @Component ({
   selector: 'new-meal',
   template:`
-    <div>
-      <label>Enter Meal Name:</label>
-      <input #newName>
-    </div>
-    <div>
-      <label>Enter Meal Details:</label>
-      <input #newDetails>
-    </div>
-    <div>
-      <label>Enter Meal Calorie Count:</label>
-      <input type="number" #newCalories>
-      <button (click)="
-        addClicked(newName.value, newDetails.value, newCalories.value);
-        newName.value='';
-        newDetails.value='';
-        newCalories.value='';
-      ">Add</button>
+    <div class="entryForm">
+      <span class="headers"><h2>New Meal</h2></span>
+      <div>
+        <label>Enter Meal Name:</label>
+        <input #newName placeholder="Meal Name">
+      </div>
+      <div>
+        <label>Enter Meal Details:</label>
+        <input #newDetails placeholder="Meal Details">
+      </div>
+      <div>
+        <label>Enter Meal Calorie Count:</label>
+        <input type="number" #newCalories placeholder="Meal Calorie Count">
+        <button class="btn btn-success" (click)="
+          addClicked(newName.value, newDetails.value, newCalories.value);
+          newName.value='';
+          newDetails.value='';
+          newCalories.value='';
+        ">Add</button>
+      </div>
     </div>
   `
 })
