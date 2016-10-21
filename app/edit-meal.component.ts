@@ -16,7 +16,7 @@ import { Meal } from './meal.model';
       </div>
       <div>
         <label>Enter Meal Calorie Count:</label>
-        <input [(ngModel)]="childSelectedMeal.calories">
+        <input type="number" [(ngModel)]="childSelectedMeal.calories">
         <button (click)="doneClicked()">Done</button>
       </div>
     </div>
