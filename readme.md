@@ -15,10 +15,15 @@ This application is designed to allow users to track their meals. Users can log 
 * _Example Input: Food name, calories, details_
 * _Example Output: Food name, calories, details_
 
+##### Program edits meal entry based on user input
+
+* _Example Input: Food name , calories, details_
+* _Example Output: Food name, calories, details_
+
 ##### Program filters meal entries based on calories
 
 * _Example Input: High-calorie foods_
-* _Example Output: Meal entries containing calories greater than 500_
+* _Example Output: Meal entries containing calories equal to or greater than 500_
 
 ## Setup/Installation Requirements
 
