@@ -12,6 +12,7 @@ import { Meal } from './meal.model';
         <option value="highCalories">Meals Containing 500 Calories Or More</option>
       </select>
     </div>
+    <h3>Total Calories: {{childMealList | total}}</h3>
     <div class="mealEntry" *ngFor="let currentMeal of childMealList | calorie:selectedCalorieCount">
       <meal-display [meal]="currentMeal"></meal-display>
       <button class="btn btn-success" (click)="editButtonHasBeenClicked(currentMeal)">Edit</button>
@@ -23,6 +24,7 @@ export class MealListComponent {
   @Input() childMealList: Meal[];
   @Output() clickSender = new EventEmitter();
   public selectedCalorieCount: string = "all";
+  public totalCalories = 0;
   editButtonHasBeenClicked(mealToEdit: Meal) {
     this.clickSender.emit(mealToEdit);
   }

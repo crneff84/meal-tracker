@@ -30,8 +30,8 @@ import { Meal } from './meal.model';
 
 export class NewMealComponent {
   @Output() newMealSender = new EventEmitter();
-  addClicked(name: string, details: string, calories: number) {
-    var newMealToAdd: Meal = new Meal(name, details, calories);
+  addClicked(name: string, details: string, calories: string) {
+    var newMealToAdd: Meal = new Meal(name, details, parseInt(calories));
     this.newMealSender.emit(newMealToAdd);
   }
 }
